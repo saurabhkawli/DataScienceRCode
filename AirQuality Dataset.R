@@ -42,3 +42,18 @@ boxplot(airquality$Temp,main='Boxplot')
 
 #Multiple Box Plot
 boxplot(airquality[,1:4],main='Multiple')
+
+#Displaying Multiple Graphs
+par(mfrow=c(3,3),mar=c(2,5,2,1),las=0,bty="0")
+#Plotting:
+plot(airquality$Ozone)
+plot(airquality$Ozone,airquality$Wind)
+plot(airquality$Ozone,type="l")
+plot(airquality$Ozone,type="l")
+plot(airquality$Ozone,type="l")
+barplot(airquality$Ozone,main = 'Ozone Concentration in City',ylab = 'Ozone Levels',
+        col='cyan',horiz=F,axes=F)
+hist(airquality$Solar.R)
+boxplot(airquality$Solar.R)
+boxplot(airquality[,0:4],main="Multiple Boxplots")
+
