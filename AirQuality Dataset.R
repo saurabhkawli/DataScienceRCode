@@ -10,6 +10,8 @@ df<-airquality[,-6]
 summary(airquality[,1])
 airquality$Wind
 
+#This is Test 
+
 #Summary of data
 summary(airquality$Wind)
 summary(airquality$Temp)
